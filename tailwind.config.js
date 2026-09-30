@@ -1,0 +1,96 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        navy: {
+          DEFAULT: '#082B4C',
+          50: '#E8F0F8',
+          100: '#C5D8EC',
+          200: '#8FB5D6',
+          300: '#5A92BF',
+          400: '#2F6FA9',
+          500: '#082B4C',
+          600: '#062341',
+          700: '#041B33',
+          800: '#031426',
+          900: '#010C18',
+        },
+        teal: {
+          DEFAULT: '#00A6A6',
+          50: '#E0F7F7',
+          100: '#B3ECEC',
+          200: '#80DEDE',
+          300: '#4DD0D0',
+          400: '#26BEBE',
+          500: '#00A6A6',
+          600: '#008A8A',
+          700: '#006E6E',
+          800: '#005252',
+          900: '#003636',
+        },
+        royal: {
+          DEFAULT: '#1765E0',
+          50: '#E8EFFC',
+          100: '#C5D6F8',
+          200: '#8FB2F0',
+          300: '#5A8DE8',
+          400: '#2E6CE0',
+          500: '#1765E0',
+          600: '#1254C0',
+          700: '#0E43A0',
+          800: '#0A3280',
+          900: '#062160',
+        },
+        cyan: {
+          DEFAULT: '#18C8EC',
+          50: '#E8F8FD',
+          100: '#C5EEF9',
+          200: '#8FE0F4',
+          300: '#5AD2EE',
+          400: '#34CDF0',
+          500: '#18C8EC',
+          600: '#10A8CE',
+          700: '#0C88AE',
+          800: '#08688E',
+          900: '#04486E',
+        },
+        light: '#F8FAFC',
+      },
+      fontFamily: {
+        manrope: ['Manrope', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+        mono: ['JetBrains Mono', 'monospace'],
+      },
+      animation: {
+        'fade-up': 'fadeUp 0.6s ease forwards',
+        'fade-in': 'fadeIn 0.4s ease forwards',
+        'slide-right': 'slideRight 0.5s ease forwards',
+        'draw-line': 'drawLine 1.5s ease forwards',
+      },
+      keyframes: {
+        fadeUp: {
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideRight: {
+          '0%': { opacity: '0', transform: 'translateX(-20px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        drawLine: {
+          '0%': { strokeDashoffset: '1000' },
+          '100%': { strokeDashoffset: '0' },
+        },
+      },
+    },
+  },
+  plugins: [],
+}
